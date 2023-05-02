@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Меню</button>
+
+<div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">ITSM</a></li>
+            <li class="uk-active"><a href="#">DCIM</a></li>
+            <li class="uk-parent">
+                <a href="#">Parent</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">Подменю 1</a></li>
+                    <li><a href="#">Подменю 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Inventory</a></li></li>
+            <li class="uk-nav-header">Ссылки</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Мегаплан</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Кабельное хозяйство</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Wiki</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> ASANA</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Руководоство</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="uk-container uk-container-medium">
+    <div class="uk-grid-collapse uk-child-width-1-1 uk-height-viewport" uk-grid>
+        <div class="uk-container uk-container-large uk-padding-large uk-margin-auto">
+            <h2 class="uk-modal-title">НИЦ-1 <span class="uk-heading-bullet">Emerson ИБП-1</span> 
+                <button href="#device-edit" class="uk-icon-link" uk-icon="icon: pencil" uk-toggle></button>
+            </h2>
+
+            <div class="uk-card uk-card-hover uk-card-body glow">
+                <h3 class="uk-card-title">Описание:</h3>
+                <p class="uk-text-muted">Модель: NXA-200kVA</p>
+                <p class="uk-text-muted">S/N: RJ2810RP011</p>
+                <p class="uk-text-muted">Комментарий: Б\У, был установлен на Дмитровской</p>
+                <hr class="uk-divider-small">
+            </div>
+
+            <div class="uk-card uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">События:</h3>
+                <table class="uk-table uk-table-hover uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Дата <span uk-icon="icon: arrow-up"></span></a></th>
+                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Тип <span uk-icon="icon: arrow-up"></span></a></th>
+                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Событие <span uk-icon="icon: arrow-down"></span></a></th>
+                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Исполнитель <span uk-icon="icon: arrow-up"></span></a></th>
+                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Состояние <span uk-icon="icon: arrow-down"></span></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22.04.2022</td>
+                            <td>Авария</td>
+                            <td class="uk-table-link">
+                                <a class="uk-link-reset" type="button" uk-toggle="target: #event-explorer">Отказ вентиляторов</a>
+                            </td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-warning">В работе</span></td>
+                        </tr>
+                        <tr>
+                            <td>30.12.2022</td>
+                            <td>Авария</td>
+                            <td>Сгорел конденсатор</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>04.05.2023</td>
+                            <td>ТО</td>
+                            <td>Плановое ТО</td>
+                            <td>Кузнецов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>22.05.2023</td>
+                            <td>Авария</td>
+                            <td>Отказ контроллера</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-warning">В работе</span></td>
+                        </tr>
+                        <tr>
+                            <td>30.12.2022</td>
+                            <td>Авария</td>
+                            <td>Сгорел конденсатор</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>04.05.2023</td>
+                            <td>ТО</td>
+                            <td>Плановое ТО</td>
+                            <td>Кузнецов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>22.05.2023</td>
+                            <td>Авария</td>
+                            <td>Отказ контроллера</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-warning">В работе</span></td>
+                        </tr>
+                        <tr>
+                            <td>30.12.2022</td>
+                            <td>Авария</td>
+                            <td>Сгорел конденсатор</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>04.05.2023</td>
+                            <td>ТО</td>
+                            <td>Плановое ТО</td>
+                            <td>Кузнецов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>22.05.2023</td>
+                            <td>Авария</td>
+                            <td>Отказ контроллера</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-warning">В работе</span></td>
+                        </tr>
+                        <tr>
+                            <td>30.12.2022</td>
+                            <td>Авария</td>
+                            <td>Сгорел конденсатор</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>04.05.2023</td>
+                            <td>ТО</td>
+                            <td>Плановое ТО</td>
+                            <td>Кузнецов А.</td>
+                            <td><span class="uk-label uk-label-success">Завершено</span></td>
+                        </tr>
+                        <tr>
+                            <td>22.05.2023</td>
+                            <td>Авария</td>
+                            <td>Отказ контроллера</td>
+                            <td>Лизунов А.</td>
+                            <td><span class="uk-label uk-label-warning">В работе</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
+                    <li class="uk-active"><a href="#"><span uk-pagination-previous></span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li class="uk-disabled"><span>…</span></li>
+                    <li><a href="#">12</a></li>
+                    <li><a href="#">13</a></li>
+                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="device-edit" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+
+                <div class="uk-padding-large" uk-height-viewport>
+                    <h1>Редактирование</h1>
+                    <h3>Регулятор скорости вращения вентиляторов</h3>
+
+                    <form class="uk-form-horizontal uk-margin-large">
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="code">Модель:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="code" type="text" placeholder="NXA-200kVA">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="code">S/N:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="code" type="text" placeholder="RJ2810RP011">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="comment">Комментарий:</label>
+                            <div class="uk-form-controls">
+                                <textarea class="uk-input uk-textarea" rows="10" cols="45"  id="comment" type="text" placeholder="Б\У, был установлен на Дмитровской"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-flex uk-text-center uk-container uk-container-small">
+                            <div class="uk-margin-auto uk-inline">
+                                <ul class="uk-subnav">
+                                    <li>
+                                        <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})">
+                                            <span class="uk-margin-small-right" uk-icon="ban"></span> Отменить
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})">
+                                            <span class="uk-margin-small-right" uk-icon="check"></span> Обновить
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="event-explorer" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+
+                <div class="uk-padding-large" uk-height-viewport>
+                    <h1>Просмотр события</h1>
+                    <h3>Событие: Отказ вентиляторов 
+                        <span class="uk-heading-bullet">НИЦ-1</span>
+                        <span class="uk-heading-bullet">Emerson ИБП-1</span>
+                    </h3>
+
+                    <form class="uk-form-horizontal uk-margin-large">
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="date-start">Дата создания:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="date-start" type="date">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="date-end">Дата завершения:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="date-end" type="date">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="status">Состояние:</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="status">
+                                    <option selected>Не выбрано</option>
+                                    <option>В работе</option>
+                                    <option>Завершено</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="executor">Ответственный:</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="executor">
+                                    <option selected>Не выбрано</option>
+                                    <option>Лизунов А.</option>
+                                    <option>Кузнецов А.</option>
+                                    <option>Князев В.</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="comment">Описание:</label>
+                            <div class="uk-form-controls">
+                                <textarea class="uk-textarea" rows="7" id="comment" type="text" placeholder="Б\У, был установлен на Дмитровской"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin-bottom">
+                            <label class="uk-form-label" for="attach">Приложения:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-margin" uk-margin>
+                                    <input class="uk-input" type="text" placeholder="Наименование прикрепляемого файла" aria-label="Input">
+                                    <div uk-form-custom="target: true">
+                                        <input type="file" aria-label="Custom controls">
+                                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                                    </div>
+                                    <button class="uk-button uk-button-default">Прикрепить</button>
+                                </div>
+                                <ul class="uk-list uk-list-disc uk-link-text">
+                                    <li>
+                                        <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Акт выполненных работ</a>
+                                        <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Схема подключения</a>
+                                        <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="uk-flex uk-text-center uk-container uk-container-small">
+                            <div class="uk-margin-auto uk-inline">
+                                <ul class="uk-subnav">
+                                    <li>
+                                        <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Событие удалено', pos: 'top-right'})">
+                                            <span class="uk-margin-small-right" uk-icon="trash"></span> Удалить
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})">
+                                            <span class="uk-margin-small-right" uk-icon="ban"></span> Отменить
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})">
+                                            <span class="uk-margin-small-right" uk-icon="check"></span> Обновить
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="main.js"></script>
+</html>
