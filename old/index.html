@@ -1,86 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <button
+            class="uk-button uk-button-default"
+            type="button"
+            uk-toggle="target: #offcanvas-nav"
+        >
+            Меню
+        </button>
 
-<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Меню</button>
-
-<div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
-    <div class="uk-offcanvas-bar">
-
-        <ul class="uk-nav uk-nav-default">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">ITSM</a></li>
-            <li class="uk-active"><a href="#">DCIM</a></li>
-            <li class="uk-parent">
-                <a href="#">Parent</a>
-                <ul class="uk-nav-sub">
-                    <li><a href="#">Подменю 1</a></li>
-                    <li><a href="#">Подменю 2</a></li>
+        <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">ITSM</a></li>
+                    <li class="uk-active"><a href="#">DCIM</a></li>
+                    <li class="uk-parent">
+                        <a href="#">Parent</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Подменю 1</a></li>
+                            <li><a href="#">Подменю 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Inventory</a></li>
+                    <li class="uk-nav-header">Ссылки</li>
+                    <li>
+                        <a href="#"
+                            ><span class="uk-margin-small-right" uk-icon="icon: table"></span>
+                            Мегаплан</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>
+                            Кабельное хозяйство</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><span class="uk-margin-small-right" uk-icon="icon: table"></span>
+                            Wiki</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span>
+                            ASANA</a
+                        >
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#"
+                            ><span class="uk-margin-small-right" uk-icon="icon: file-text"></span>
+                            Руководоство</a
+                        >
+                    </li>
                 </ul>
-            </li>
-            <li><a href="#">Inventory</a></li></li>
-            <li class="uk-nav-header">Ссылки</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Мегаплан</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Кабельное хозяйство</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Wiki</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> ASANA</a></li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Руководоство</a></li>
-        </ul>
+            </div>
+        </div>
 
-    </div>
-</div>
+        <div class="uk-container uk-container-medium">
+            <div class="page-title">DCIM</div>
 
- <div class="uk-container uk-container-medium">
-    <div class="page-title">DCIM</div>
-    
-        <ul uk-tab="animation: uk-animation-slide-right-medium">
-            <li><a href="#">Склад</a></li>
-            <li><a href="#">Оборудование</a></li>
-            <li><a href="#">События</a></li>
-            <li><a href="#">Планировщик</a></li>
-        </ul>
+            <ul uk-tab="animation: uk-animation-slide-right-medium">
+                <li><a href="#">Склад</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Планировщик</a></li>
+            </ul>
 
-        <ul class="uk-switcher uk-margin">
-            <li>
-                <nav class="uk-navbar-container" uk-navbar>
-                    <div class="uk-navbar-left">
-                
-                        <div class="uk-navbar-item">
-                            <form class="uk-search uk-search-navbar">
-                                <span uk-search-icon></span>
-                                <input class="uk-search-input" type="search" placeholder="Поиск" aria-label="Search">
-                            </form>
+            <ul class="uk-switcher uk-margin">
+                <li>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <div class="uk-navbar-item">
+                                <form class="uk-search uk-search-navbar">
+                                    <span uk-search-icon></span>
+                                    <input
+                                        class="uk-search-input"
+                                        type="search"
+                                        placeholder="Поиск"
+                                        aria-label="Search"
+                                    />
+                                </form>
+                            </div>
                         </div>
-                
-                    </div>
-                </nav>
+                    </nav>
 
-                <div class="uk-flex uk-text-center uk-container uk-container-small">
-                    <div class="uk-margin-auto uk-margin-top uk-inline uk-margin-large-bottom">
-                        <nav uk-dropnav="mode: click">
-                            <ul class="uk-subnav">
-                                <li>
-                                    <button class="uk-button uk-button-default"><span uk-drop-parent-icon></span> Кластер</button>
-                                    <div class="uk-dropdown uk-width-medium" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click">
-                                        <ul class="uk-nav uk-dropdown-nav">
-
-                                            <div class="uk-text-left">
-                                                <li><label><input class="uk-checkbox" type="checkbox" checked> Нижегородская</label></li>
-                                                <li><label><input class="uk-checkbox" type="checkbox"> Дмитровская</label></li>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <!--
+                    <div class="uk-flex uk-text-center uk-container uk-container-small">
+                        <div class="uk-margin-auto uk-margin-top uk-inline uk-margin-large-bottom">
+                            <nav uk-dropnav="mode: click">
+                                <ul class="uk-subnav">
+                                    <li>
+                                        <button class="uk-button uk-button-default">
+                                            <span uk-drop-parent-icon></span> Кластер
+                                        </button>
+                                        <div
+                                            class="uk-dropdown uk-width-medium"
+                                            uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click"
+                                        >
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <div class="uk-text-left">
+                                                    <li>
+                                                        <label
+                                                            ><input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                checked
+                                                            />
+                                                            Нижегородская</label
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <label
+                                                            ><input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                            />
+                                                            Дмитровская</label
+                                                        >
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!--
                                 <li>
                                     <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="album"></span> Сортировка</button>
                                     <div class="uk-dropdown uk-width-medium" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click">
@@ -93,28 +145,60 @@
                                     </div>
                                 </li>
                                 -->
-                                <li>
-                                    <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="thumbnails"></span> Фильтр</button>
-                                    <div class="uk-width-xlarge" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500; mode: click">
+                                    <li>
+                                        <button class="uk-button uk-button-default">
+                                            <span
+                                                class="uk-margin-small-right"
+                                                uk-icon="thumbnails"
+                                            ></span>
+                                            Фильтр
+                                        </button>
+                                        <div
+                                            class="uk-width-xlarge"
+                                            uk-dropdown="animation: reveal-top; animate-out: true; duration: 500; mode: click"
+                                        >
                                             <div>
                                                 <ul class="uk-nav uk-dropdown-nav">
-                                                    <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+                                                    <div
+                                                        class="uk-child-width-1-2@s uk-text-center"
+                                                        uk-grid
+                                                    >
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Система</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Система</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
-                                                                    <option>Кондиционирование</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
+                                                                    <option>
+                                                                        Кондиционирование
+                                                                    </option>
                                                                     <option>ИБП</option>
                                                                     <option>ДГУ</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Расположение</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Расположение</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Полка №1</option>
                                                                     <option>Полка №2</option>
                                                                     <option>Полка №3</option>
@@ -122,10 +206,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">ЦОД</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >ЦОД</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>НИЦ-1</option>
                                                                     <option>НИЦ-2</option>
                                                                     <option>НИЦ-3</option>
@@ -133,10 +226,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Установка</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Установка</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Emerson ИБП-1</option>
                                                                     <option>Emerson ИБП-2</option>
                                                                     <option>Emerson ИБП-3</option>
@@ -145,10 +247,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Назначение</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Назначение</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Stulz</option>
                                                                     <option>HiRef</option>
                                                                     <option>Emerson</option>
@@ -157,9 +268,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Дата закупки</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Дата закупки</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <input class="uk-input" type="date" placeholder="Input" aria-label="Input">
+                                                                <input
+                                                                    class="uk-input"
+                                                                    type="date"
+                                                                    placeholder="Input"
+                                                                    aria-label="Input"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -167,450 +287,851 @@
                                                         <div class="uk-margin"></div>
                                                     </li>
                                                     <li>
-                                                        <hr class="uk-divider-small">
+                                                        <hr class="uk-divider-small" />
                                                     </li>
                                                     <li>
-                                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center">
-                                                            <label><input class="uk-checkbox" type="checkbox"> Показать установленные</label>
-                                                            <label><input class="uk-checkbox" type="checkbox"> Есть вложения</label>
-                                                            <label><input class="uk-checkbox" type="checkbox"> Есть комментарий</label>
+                                                        <div
+                                                            class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center"
+                                                        >
+                                                            <label
+                                                                ><input
+                                                                    class="uk-checkbox"
+                                                                    type="checkbox"
+                                                                />
+                                                                Показать установленные</label
+                                                            >
+                                                            <label
+                                                                ><input
+                                                                    class="uk-checkbox"
+                                                                    type="checkbox"
+                                                                />
+                                                                Есть вложения</label
+                                                            >
+                                                            <label
+                                                                ><input
+                                                                    class="uk-checkbox"
+                                                                    type="checkbox"
+                                                                />
+                                                                Есть комментарий</label
+                                                            >
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center uk-inline">
-                                                            <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="close"></span> Сброс</button>
-                                                            <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="check"></span> Применить</button>
+                                                        <div
+                                                            class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center uk-inline"
+                                                        >
+                                                            <button
+                                                                class="uk-button uk-button-default"
+                                                            >
+                                                                <span
+                                                                    class="uk-margin-small-right"
+                                                                    uk-icon="close"
+                                                                ></span>
+                                                                Сброс
+                                                            </button>
+                                                            <button
+                                                                class="uk-button uk-button-default"
+                                                            >
+                                                                <span
+                                                                    class="uk-margin-small-right"
+                                                                    uk-icon="check"
+                                                                ></span>
+                                                                Применить
+                                                            </button>
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="uk-button uk-button-default" href="#modal-full-1" uk-toggle><span class="uk-margin-small-right" uk-icon="plus"></span> Добавить</button>
-                                </li>
-                            </ul>
-                        </nav>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button
+                                            class="uk-button uk-button-default"
+                                            href="#modal-full-1"
+                                            uk-toggle
+                                        >
+                                            <span
+                                                class="uk-margin-small-right"
+                                                uk-icon="plus"
+                                            ></span>
+                                            Добавить
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>
-            
-                <table class="uk-table uk-table-small uk-table-divider uk-table-hover">
-                    <thead>
-                        <tr>
-                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Система <span uk-icon="icon: arrow-up"></span></a></th>
-                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Назначение <span uk-icon="icon: arrow-down"></span></a></th>
-                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Наименование <span uk-icon="icon: arrow-down"></span></a></th>
-                            <th class="uk-table-link"><a class="uk-link-reset" href="#">Артикул <span uk-icon="icon: arrow-up"></span></a></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Регулятор скорости вращения вентиляторов</a>
-                            </td>
-                            <td>RGE-Z1Q4-7DS</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Электронный ТРВ</a>
-                            </td>
-                            <td>E3V45SWR00-76</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Премычка WAGO 32 А</a>
-                            </td>
-                            <td>2002-402</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Счётчик электрический на DIN-рейку</a>
-                            </td>
-                            <td>Нева 105 1S0 230V 5(40)A</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>HiRef</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>HiRef</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Регулятор скорости вращения вентиляторов</a>
-                            </td>
-                            <td>RGE-Z1Q4-7DS</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>HiRef</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Электронный ТРВ</a>
-                            </td>
-                            <td>E3V45SWR00-76</td>
-                        </tr>
-                        <tr>
-                            <td>ИБП</td>
-                            <td>Emerson</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Премычка WAGO 32 А</a>
-                            </td>
-                            <td>2002-402</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Emerson</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Счётчик электрический на DIN-рейку</a>
-                            </td>
-                            <td>Нева 105 1S0 230V 5(40)A</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Премычка WAGO 32 А</a>
-                            </td>
-                            <td>2002-402</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Счётчик электрический на DIN-рейку</a>
-                            </td>
-                            <td>Нева 105 1S0 230V 5(40)A</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>HiRef</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Регулятор скорости вращения вентиляторов</a>
-                            </td>
-                            <td>RGE-Z1Q4-7DS</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Электронный ТРВ</a>
-                            </td>
-                            <td>E3V45SWR00-76</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Премычка WAGO 32 А</a>
-                            </td>
-                            <td>2002-402</td>
-                        </tr>
-                        <tr>
-                            <td>Электрика</td>
-                            <td>Общее</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Счётчик электрический на DIN-рейку</a>
-                            </td>
-                            <td>Нева 105 1S0 230V 5(40)A</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                        <tr>
-                            <td>Кондиционирование</td>
-                            <td>Stulz</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" type="button" uk-toggle="target: #offcanvas-flip">Fan, AC230V, 14W, 2900RPM, 119*38</a>
-                            </td>
-                            <td>80104445</td>
-                        </tr>
-                    </tbody>
-                </table>
 
-                <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
-                    <li class="uk-active"><a href="#"><span uk-pagination-previous></span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="uk-disabled"><span>…</span></li>
-                    <li><a href="#">12</a></li>
-                    <li><a href="#">13</a></li>
-                    <li><a href="#"><span uk-pagination-next></span></a></li>
-                </ul>
-            </li>
+                    <table class="uk-table uk-table-small uk-table-divider uk-table-hover">
+                        <thead>
+                            <tr>
+                                <th class="uk-table-link">
+                                    <a class="uk-link-reset" href="#"
+                                        >Система <span uk-icon="icon: arrow-up"></span
+                                    ></a>
+                                </th>
+                                <th class="uk-table-link">
+                                    <a class="uk-link-reset" href="#"
+                                        >Назначение <span uk-icon="icon: arrow-down"></span
+                                    ></a>
+                                </th>
+                                <th class="uk-table-link">
+                                    <a class="uk-link-reset" href="#"
+                                        >Наименование <span uk-icon="icon: arrow-down"></span
+                                    ></a>
+                                </th>
+                                <th class="uk-table-link">
+                                    <a class="uk-link-reset" href="#"
+                                        >Артикул <span uk-icon="icon: arrow-up"></span
+                                    ></a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Регулятор скорости вращения вентиляторов</a
+                                    >
+                                </td>
+                                <td>RGE-Z1Q4-7DS</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Электронный ТРВ</a
+                                    >
+                                </td>
+                                <td>E3V45SWR00-76</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Премычка WAGO 32 А</a
+                                    >
+                                </td>
+                                <td>2002-402</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Счётчик электрический на DIN-рейку</a
+                                    >
+                                </td>
+                                <td>Нева 105 1S0 230V 5(40)A</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>HiRef</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>HiRef</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Регулятор скорости вращения вентиляторов</a
+                                    >
+                                </td>
+                                <td>RGE-Z1Q4-7DS</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>HiRef</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Электронный ТРВ</a
+                                    >
+                                </td>
+                                <td>E3V45SWR00-76</td>
+                            </tr>
+                            <tr>
+                                <td>ИБП</td>
+                                <td>Emerson</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Премычка WAGO 32 А</a
+                                    >
+                                </td>
+                                <td>2002-402</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Emerson</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Счётчик электрический на DIN-рейку</a
+                                    >
+                                </td>
+                                <td>Нева 105 1S0 230V 5(40)A</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Премычка WAGO 32 А</a
+                                    >
+                                </td>
+                                <td>2002-402</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Счётчик электрический на DIN-рейку</a
+                                    >
+                                </td>
+                                <td>Нева 105 1S0 230V 5(40)A</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>HiRef</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Регулятор скорости вращения вентиляторов</a
+                                    >
+                                </td>
+                                <td>RGE-Z1Q4-7DS</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Электронный ТРВ</a
+                                    >
+                                </td>
+                                <td>E3V45SWR00-76</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Премычка WAGO 32 А</a
+                                    >
+                                </td>
+                                <td>2002-402</td>
+                            </tr>
+                            <tr>
+                                <td>Электрика</td>
+                                <td>Общее</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Счётчик электрический на DIN-рейку</a
+                                    >
+                                </td>
+                                <td>Нева 105 1S0 230V 5(40)A</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                            <tr>
+                                <td>Кондиционирование</td>
+                                <td>Stulz</td>
+                                <td class="uk-table-link">
+                                    <a
+                                        class="uk-link-reset"
+                                        type="button"
+                                        uk-toggle="target: #offcanvas-flip"
+                                        >Fan, AC230V, 14W, 2900RPM, 119*38</a
+                                    >
+                                </td>
+                                <td>80104445</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-            <li>
-                <ul class="uk-child-width-expand" uk-tab="animation: uk-animation-slide-right-medium">
-                    <li><a href="#">НИЦ-1</a></li>
-                    <li><a href="#">НИЦ-2</a></li>
-                    <li><a href="#">НИЦ-3</a></li>
-                </ul>
-        
-                <ul class="uk-switcher uk-margin">
-                    <li>
-                        <div class="uk-child-width-1-4" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ИБП</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="device-page.html" uk-toggle>Emerson ИБП-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-4</a></li>
-                                        </ul>
+                    <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
+                        <li class="uk-active">
+                            <a href="#"><span uk-pagination-previous></span></a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="uk-disabled"><span>…</span></li>
+                        <li><a href="#">12</a></li>
+                        <li><a href="#">13</a></li>
+                        <li>
+                            <a href="#"><span uk-pagination-next></span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul
+                        class="uk-child-width-expand"
+                        uk-tab="animation: uk-animation-slide-right-medium"
+                    >
+                        <li><a href="#">НИЦ-1</a></li>
+                        <li><a href="#">НИЦ-2</a></li>
+                        <li><a href="#">НИЦ-3</a></li>
+                    </ul>
+
+                    <ul class="uk-switcher uk-margin">
+                        <li>
+                            <div class="uk-child-width-1-4" uk-grid>
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ИБП</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a
+                                                        class="uk-link-heading"
+                                                        href="device-page.html"
+                                                        uk-toggle
+                                                        >Emerson ИБП-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-4</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">
+                                            Кондиционирование
+                                        </h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-4</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-5</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-6</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >HiRef К-7</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >WG Wilson 1250</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">Электрика</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-1</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-3</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </li>
 
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Кондиционирование</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">HiRef К-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-4</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-5</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-6</a></li>
-                                            <li><a class="uk-link-heading" href="#">HiRef К-7</a></li>
-                                        </ul>
+                        <li>
+                            <div class="uk-child-width-1-4" uk-grid>
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ИБП</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-2</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">
+                                            Кондиционирование
+                                        </h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-4</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-5</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >WG Wilson 1000</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">Электрика</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-1</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </li>
 
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">WG Wilson 1250</a></li>
-                                        </ul>
+                        <li>
+                            <div class="uk-child-width-1-4" uk-grid>
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ИБП</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a
+                                                        class="uk-link-heading"
+                                                        href="device-page.html"
+                                                        uk-toggle
+                                                        >Emerson ИБП-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Emerson ИБП-4</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">
+                                            Кондиционирование
+                                        </h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-4</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >Stulz К-5</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#"
+                                                        >WG Wilson 1250</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover"
+                                    >
+                                        <h3 class="uk-card-title uk-text-muted">Электрика</h3>
+                                        <div class="uk-text-center">
+                                            <ul class="uk-list uk-list-collapse uk-list-divider">
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-1</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-link-heading" href="#">РЩ-3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </li>
+                    </ul>
+                </li>
 
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Электрика</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">РЩ-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-4</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <li>
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <div class="uk-navbar-item">
+                                <form class="uk-search uk-search-navbar">
+                                    <span uk-search-icon></span>
+                                    <input
+                                        class="uk-search-input"
+                                        type="search"
+                                        placeholder="Поиск"
+                                        aria-label="Search"
+                                    />
+                                </form>
                             </div>
                         </div>
-                    </li>
+                    </nav>
 
-                    <li>
-                        <div class="uk-child-width-1-4" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ИБП</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-2</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Кондиционирование</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">Stulz К-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-4</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-5</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">WG Wilson 1000</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Электрика</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">РЩ-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-2</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="uk-child-width-1-4" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ИБП</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="device-page.html" uk-toggle>Emerson ИБП-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">Emerson ИБП-4</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Кондиционирование</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">Stulz К-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-3</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-4</a></li>
-                                            <li><a class="uk-link-heading" href="#">Stulz К-5</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">ДГУ</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">WG Wilson 1250</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
-                                    <h3 class="uk-card-title uk-text-muted">Электрика</h3>
-                                    <div class="uk-text-center">
-                                        <ul class="uk-list uk-list-collapse uk-list-divider">
-                                            <li><a class="uk-link-heading" href="#">РЩ-1</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-2</a></li>
-                                            <li><a class="uk-link-heading" href="#">РЩ-3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <nav class="uk-navbar-container" uk-navbar>
-                    <div class="uk-navbar-left">
-                
-                        <div class="uk-navbar-item">
-                            <form class="uk-search uk-search-navbar">
-                                <span uk-search-icon></span>
-                                <input class="uk-search-input" type="search" placeholder="Поиск" aria-label="Search">
-                            </form>
-                        </div>
-                
-                    </div>
-                </nav>
-
-                <div class="uk-flex uk-text-center uk-container uk-container-small">
-                    <div class="uk-margin-auto uk-margin-top uk-inline uk-margin-large-bottom">
-                        <nav uk-dropnav="mode: click">
-                            <ul class="uk-subnav">
-                                <li>
-                                    <button class="uk-button uk-button-default"><span uk-drop-parent-icon></span> Кластер</button>
-                                    <div class="uk-dropdown uk-width-medium" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click">
-                                        <ul class="uk-nav uk-dropdown-nav">
-
-                                            <div class="uk-text-left">
-                                                <li><label><input class="uk-checkbox" type="checkbox" checked> Нижегородская</label></li>
-                                                <li><label><input class="uk-checkbox" type="checkbox"> Дмитровская</label></li>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="thumbnails"></span> Фильтр</button>
-                                    <div class="uk-width-xlarge" uk-dropdown="animation: reveal-top; animate-out: true; duration: 500; mode: click">
+                    <div class="uk-flex uk-text-center uk-container uk-container-small">
+                        <div class="uk-margin-auto uk-margin-top uk-inline uk-margin-large-bottom">
+                            <nav uk-dropnav="mode: click">
+                                <ul class="uk-subnav">
+                                    <li>
+                                        <button class="uk-button uk-button-default">
+                                            <span uk-drop-parent-icon></span> Кластер
+                                        </button>
+                                        <div
+                                            class="uk-dropdown uk-width-medium"
+                                            uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click"
+                                        >
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <div class="uk-text-left">
+                                                    <li>
+                                                        <label
+                                                            ><input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                checked
+                                                            />
+                                                            Нижегородская</label
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <label
+                                                            ><input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                            />
+                                                            Дмитровская</label
+                                                        >
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="uk-button uk-button-default">
+                                            <span
+                                                class="uk-margin-small-right"
+                                                uk-icon="thumbnails"
+                                            ></span>
+                                            Фильтр
+                                        </button>
+                                        <div
+                                            class="uk-width-xlarge"
+                                            uk-dropdown="animation: reveal-top; animate-out: true; duration: 500; mode: click"
+                                        >
                                             <div>
                                                 <ul class="uk-nav uk-dropdown-nav">
-                                                    <div class="uk-child-width-1-2@s uk-text-center" uk-grid>
+                                                    <div
+                                                        class="uk-child-width-1-2@s uk-text-center"
+                                                        uk-grid
+                                                    >
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Система</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Система</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
-                                                                    <option>Кондиционирование</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
+                                                                    <option>
+                                                                        Кондиционирование
+                                                                    </option>
                                                                     <option>ИБП</option>
                                                                     <option>ДГУ</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">ЦОД</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >ЦОД</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>НИЦ-1</option>
                                                                     <option>НИЦ-2</option>
                                                                     <option>НИЦ-3</option>
@@ -618,10 +1139,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Установка</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Установка</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Emerson ИБП-1</option>
                                                                     <option>Emerson ИБП-2</option>
                                                                     <option>Emerson ИБП-3</option>
@@ -630,10 +1160,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Тип</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Тип</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Авария</option>
                                                                     <option>Плановое ТО</option>
                                                                     <option>Даигностика</option>
@@ -641,10 +1180,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Ответственный</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Ответственный</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <select class="uk-select" id="form-stacked-select">
-                                                                    <option selected>Не выбрано</option>
+                                                                <select
+                                                                    class="uk-select"
+                                                                    id="form-stacked-select"
+                                                                >
+                                                                    <option selected>
+                                                                        Не выбрано
+                                                                    </option>
                                                                     <option>Лизунов А.</option>
                                                                     <option>Кузнецов А.</option>
                                                                     <option>Князев В.</option>
@@ -652,9 +1200,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="">
-                                                            <label class="uk-form-label" for="form-stacked-select">Коридор дат</label>
+                                                            <label
+                                                                class="uk-form-label"
+                                                                for="form-stacked-select"
+                                                                >Коридор дат</label
+                                                            >
                                                             <div class="uk-form-controls">
-                                                                <input class="uk-input" type="date" placeholder="Input" aria-label="Input">
+                                                                <input
+                                                                    class="uk-input"
+                                                                    type="date"
+                                                                    placeholder="Input"
+                                                                    aria-label="Input"
+                                                                />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -662,278 +1219,671 @@
                                                         <div class="uk-margin"></div>
                                                     </li>
                                                     <li>
-                                                        <hr class="uk-divider-small">
+                                                        <hr class="uk-divider-small" />
                                                     </li>
                                                     <li>
-                                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center">
-                                                            <label><input class="uk-checkbox" type="checkbox"> Скрыть завершенные</label>
+                                                        <div
+                                                            class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center"
+                                                        >
+                                                            <label
+                                                                ><input
+                                                                    class="uk-checkbox"
+                                                                    type="checkbox"
+                                                                />
+                                                                Скрыть завершенные</label
+                                                            >
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center uk-inline">
-                                                            <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="close"></span> Сброс</button>
-                                                            <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="check"></span> Применить</button>
+                                                        <div
+                                                            class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center uk-inline"
+                                                        >
+                                                            <button
+                                                                class="uk-button uk-button-default"
+                                                            >
+                                                                <span
+                                                                    class="uk-margin-small-right"
+                                                                    uk-icon="close"
+                                                                ></span>
+                                                                Сброс
+                                                            </button>
+                                                            <button
+                                                                class="uk-button uk-button-default"
+                                                            >
+                                                                <span
+                                                                    class="uk-margin-small-right"
+                                                                    uk-icon="check"
+                                                                ></span>
+                                                                Применить
+                                                            </button>
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="uk-button uk-button-default" href="#modal-full-1" uk-toggle><span class="uk-margin-small-right" uk-icon="plus"></span> Добавить</button>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="uk-card uk-card-hover uk-card-body">
-                    <table class="uk-table uk-table-hover uk-table-divider">
-                        <thead>
-                            <tr>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Дата <span uk-icon="icon: arrow-up"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">ЦОД <span uk-icon="icon: arrow-down"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Оборудование <span uk-icon="icon: arrow-up"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Тип <span uk-icon="icon: arrow-down"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Событие <span uk-icon="icon: arrow-down"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Исполнитель <span uk-icon="icon: arrow-up"></span></a></th>
-                                <th class="uk-table-link"><a class="uk-link-reset" href="#">Состояние <span uk-icon="icon: arrow-up"></span></a></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>22.04.2022</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-1</td>
-                                <td>Авария</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Отказ вентиляторов</a></td>
-                                <td>Лизунов А.</td>
-                                <td><span class="uk-label uk-label-warning">В работе</span></td>
-                            </tr>
-                            <tr>
-                                <td>30.12.2022</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-2</td>
-                                <td>Авария</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Сгорел конденсатор</a></td>
-                                <td>Лизунов А.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>04.05.2023</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-2</td>
-                                <td>ТО</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Плановое ТО</a></td>
-                                <td>Кузнецов А.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>04.05.2023</td>
-                                <td>НИЦ-3</td>
-                                <td>Stulz</td>
-                                <td>ТО</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Пайка трубок</a></td>
-                                <td>Ягжов С.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>30.12.2022</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-2</td>
-                                <td>Авария</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Сгорел конденсатор</a></td>
-                                <td>Лизунов А.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>04.05.2023</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-2</td>
-                                <td>ТО</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Плановое ТО</a></td>
-                                <td>Кузнецов А.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>04.05.2023</td>
-                                <td>НИЦ-3</td>
-                                <td>Stulz</td>
-                                <td>ТО</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Пайка трубок</a></td>
-                                <td>Ягжов С.</td>
-                                <td><span class="uk-label uk-label-success">Завершено</span></td>
-                            </tr>
-                            <tr>
-                                <td>22.05.2023</td>
-                                <td>НИЦ-1</td>
-                                <td>ИБП-2</td>
-                                <td>Авария</td>
-                                <td class="uk-text-truncate uk-table-link"><a class="uk-link-reset" href="#">Отказ контроллера</a></td>
-                                <td>Лизунов А.</td>
-                                <td><span class="uk-label uk-label-warning">В работе</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
-                        <li class="uk-active"><a href="#"><span uk-pagination-previous></span></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li class="uk-disabled"><span>…</span></li>
-                        <li><a href="#">12</a></li>
-                        <li><a href="#">13</a></li>
-                        <li><a href="#"><span uk-pagination-next></span></a></li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                            <h3 class="uk-card-title">Тех. обслуживание ИБП</h3>
-                            <p>Тип: регулярное</p>
-                            <p>Ближайшая дата: 23.02.2024</p>
-                            <a class="uk-link-muted" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
-                            <h3 class="uk-card-title">Тех. обслуживание ДГУ</h3>
-                            <p>Тип: разовое</p>
-                            <p>Ближайшая дата: 23.02.2024</p>
-                            <a class="uk-link-muted" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
-                            <h3 class="uk-card-title">Промывка внешних блоков кондиционеров</h3>
-                            <p>Тип: разовое</p>
-                            <p>Ближайшая дата: 23.02.2024</p>
-                            <a class="uk-link-muted" href="#">Подробнее</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                            <h3 class="uk-card-title">Тех. обслуживание кондиционеров НИЦ-1</h3>
-                            <p>Тип: регулярное</p>
-                            <p>Ближайшая дата: 23.02.2024</p>
-                            <a class="uk-link-muted" href="#">Подробнее</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button
+                                            class="uk-button uk-button-default"
+                                            href="#modal-full-1"
+                                            uk-toggle
+                                        >
+                                            <span
+                                                class="uk-margin-small-right"
+                                                uk-icon="plus"
+                                            ></span>
+                                            Добавить
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
 
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <table class="uk-table uk-table-hover uk-table-divider">
+                            <thead>
+                                <tr>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Дата <span uk-icon="icon: arrow-up"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >ЦОД <span uk-icon="icon: arrow-down"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Оборудование <span uk-icon="icon: arrow-up"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Тип <span uk-icon="icon: arrow-down"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Событие <span uk-icon="icon: arrow-down"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Исполнитель <span uk-icon="icon: arrow-up"></span
+                                        ></a>
+                                    </th>
+                                    <th class="uk-table-link">
+                                        <a class="uk-link-reset" href="#"
+                                            >Состояние <span uk-icon="icon: arrow-up"></span
+                                        ></a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>22.04.2022</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-1</td>
+                                    <td>Авария</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Отказ вентиляторов</a>
+                                    </td>
+                                    <td>Лизунов А.</td>
+                                    <td><span class="uk-label uk-label-warning">В работе</span></td>
+                                </tr>
+                                <tr>
+                                    <td>30.12.2022</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-2</td>
+                                    <td>Авария</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Сгорел конденсатор</a>
+                                    </td>
+                                    <td>Лизунов А.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04.05.2023</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-2</td>
+                                    <td>ТО</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Плановое ТО</a>
+                                    </td>
+                                    <td>Кузнецов А.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04.05.2023</td>
+                                    <td>НИЦ-3</td>
+                                    <td>Stulz</td>
+                                    <td>ТО</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Пайка трубок</a>
+                                    </td>
+                                    <td>Ягжов С.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>30.12.2022</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-2</td>
+                                    <td>Авария</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Сгорел конденсатор</a>
+                                    </td>
+                                    <td>Лизунов А.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04.05.2023</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-2</td>
+                                    <td>ТО</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Плановое ТО</a>
+                                    </td>
+                                    <td>Кузнецов А.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04.05.2023</td>
+                                    <td>НИЦ-3</td>
+                                    <td>Stulz</td>
+                                    <td>ТО</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Пайка трубок</a>
+                                    </td>
+                                    <td>Ягжов С.</td>
+                                    <td>
+                                        <span class="uk-label uk-label-success">Завершено</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>22.05.2023</td>
+                                    <td>НИЦ-1</td>
+                                    <td>ИБП-2</td>
+                                    <td>Авария</td>
+                                    <td class="uk-text-truncate uk-table-link">
+                                        <a class="uk-link-reset" href="#">Отказ контроллера</a>
+                                    </td>
+                                    <td>Лизунов А.</td>
+                                    <td><span class="uk-label uk-label-warning">В работе</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
+                            <li class="uk-active">
+                                <a href="#"><span uk-pagination-previous></span></a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="uk-disabled"><span>…</span></li>
+                            <li><a href="#">12</a></li>
+                            <li><a href="#">13</a></li>
+                            <li>
+                                <a href="#"><span uk-pagination-next></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <h3 class="uk-card-title">Тех. обслуживание ИБП</h3>
+                                <p>Тип: регулярное</p>
+                                <p>Ближайшая дата: 23.02.2024</p>
+                                <a class="uk-link-muted" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light"
+                            >
+                                <h3 class="uk-card-title">Тех. обслуживание ДГУ</h3>
+                                <p>Тип: разовое</p>
+                                <p>Ближайшая дата: 23.02.2024</p>
+                                <a class="uk-link-muted" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light"
+                            >
+                                <h3 class="uk-card-title">Промывка внешних блоков кондиционеров</h3>
+                                <p>Тип: разовое</p>
+                                <p>Ближайшая дата: 23.02.2024</p>
+                                <a class="uk-link-muted" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                                <h3 class="uk-card-title">Тех. обслуживание кондиционеров НИЦ-1</h3>
+                                <p>Тип: регулярное</p>
+                                <p>Ближайшая дата: 23.02.2024</p>
+                                <a class="uk-link-muted" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <h3>Регулятор скорости вращения вентиляторов</h3>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Кластер: </span>
+                        <span class="">Нижегородская</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Система: </span>
+                        <span class="">Кондиционирование</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Назначение: </span>
+                        <span class="">Stulz</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">P/N: </span>
+                        <span class="">42RK131EQ</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">S/N: </span>
+                        <span class="">-</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Агрегат:</span>
+                        <span class="">НИЦ-1 К1, НИЦ-1 К5, НИЦ-2 К2, НИЦ-2 К5</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Место на складе:</span>
+                        <span class="">Полка №2</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Инвентарный номер:</span>
+                        <span class="">26</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Код:</span>
+                        <span class="">RGE-Z1Q4-7DS</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Количество:</span>
+                        <span class="">4 шт.</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Дата закупки:</span>
+                        <span class="">22.04.2021</span>
+                    </p>
+
+                    <p class="uk-text-default">
+                        <span class="ul-text-muted">Комментарий:</span>
+                        <span class="">Б/У, перемещен на Дмитровскую 22.02.2023</span>
+                    </p>
+
+                    <div>
+                        <span class="ul-text-muted">Приложения:</span>
+                        <ul class="uk-list uk-list-disc uk-link-text">
+                            <li>
+                                <a
+                                    href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                    target="_blank"
+                                    >Гарантия</a
+                                >
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                    target="_blank"
+                                    >Тех. паспорт</a
+                                >
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                    target="_blank"
+                                    >Заключение</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="ul-text-muted">Связанные ссылки:</span>
+                        <ul class="uk-list uk-list-disc uk-link-text">
+                            <li>
+                                <a href="https://schneider-russia.com/" target="_blank"
+                                    >schneider-russia.com</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="https://schneider-russia.com/" target="_blank"
+                                    >schneider-russia.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default" href="#modal-full-2" uk-toggle>
+                            <span uk-icon="icon: file-edit"></span> Редактировать
+                        </button>
+                    </div>
                 </div>
-            </li>
-        </ul>
 
-        <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-            <div class="uk-offcanvas-bar">
+                <div id="modal-full-1" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button
+                            class="uk-modal-close-full uk-close-large"
+                            type="button"
+                            uk-close
+                        ></button>
+                        <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                            <div class="uk-padding-large" uk-height-viewport>
+                                <div class="uk-container uk-container-small uk-margin-auto">
+                                    <h1>Добавление</h1>
 
-                <h3>Регулятор скорости вращения вентиляторов</h3>
+                                    <form class="uk-form-horizontal uk-margin-large">
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="cluster"
+                                                >Кластер</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <select class="uk-select" id="cluster">
+                                                    <option>Нижегородская</option>
+                                                    <option>Дмитровская</option>
+                                                    <option selected>Не выбран</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Кластер: </span>
-                    <span class="">Нижегородская</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="target"
+                                                >Назначение</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <select class="uk-select" id="target">
+                                                    <option>Stulz</option>
+                                                    <option>HiRef</option>
+                                                    <option>Emerson</option>
+                                                    <option>Wilson</option>
+                                                    <option>Общее</option>
+                                                    <option selected>Не выбран</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Система: </span>
-                    <span class="">Кондиционирование</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="system"
+                                                >Система:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <select class="uk-select" id="system">
+                                                    <option>Кондиционирование</option>
+                                                    <option>ИБП</option>
+                                                    <option>ДГУ</option>
+                                                    <option>Электрика</option>
+                                                    <option selected>Не выбран</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Назначение: </span>
-                    <span class="">Stulz</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="part-number"
+                                                >P/N:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <input
+                                                    class="uk-input"
+                                                    id="part-number"
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">P/N: </span>
-                    <span class="">42RK131EQ</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="aggr">Агрегат:</label>
+                                            <div class="uk-form-controls">
+                                                <input
+                                                    class="uk-input"
+                                                    id="aggr"
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">S/N: </span>
-                    <span class="">-</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="place"
+                                                >Место на складе:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <select class="uk-select" id="place">
+                                                    <option>Полка №1</option>
+                                                    <option>Полка №2</option>
+                                                    <option>Полка №3</option>
+                                                    <option>Полка №4</option>
+                                                    <option>Вент. шахта</option>
+                                                    <option selected>Не выбран</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Агрегат:</span>
-                    <span class="">НИЦ-1 К1, НИЦ-1 К5, НИЦ-2 К2, НИЦ-2 К5</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="code">Артикул:</label>
+                                            <div class="uk-form-controls">
+                                                <input
+                                                    class="uk-input"
+                                                    id="code"
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Место на складе:</span>
-                    <span class="">Полка №2</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="count"
+                                                >Единицы измерения:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <select class="uk-select" id="place">
+                                                    <option>шт.</option>
+                                                    <option>л.</option>
+                                                    <option>м.</option>
+                                                    <option selected>Не выбран</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Инвентарный номер:</span>
-                    <span class="">26</span>
-                </p>
-        
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Код:</span>
-                    <span class="">RGE-Z1Q4-7DS</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="count"
+                                                >Количество (шт.):</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <input
+                                                    class="uk-input"
+                                                    id="code"
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Количество:</span>
-                    <span class="">4 шт.</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="date"
+                                                >Дата закупки:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <input
+                                                    class="uk-input"
+                                                    id="code"
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Дата закупки:</span>
-                    <span class="">22.04.2021</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="comment"
+                                                >Комментарий:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <textarea
+                                                    class="uk-textarea"
+                                                    rows="7"
+                                                    id="comment"
+                                                    type="text"
+                                                    placeholder=""
+                                                ></textarea>
+                                            </div>
+                                        </div>
 
-                <p class="uk-text-default">
-                    <span class="ul-text-muted">Комментарий:</span>
-                    <span class="">Б/У, перемещен на Дмитровскую 22.02.2023</span>
-                </p>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="attach"
+                                                >Приложения:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <div class="uk-margin" uk-margin>
+                                                    <input
+                                                        class="uk-input"
+                                                        type="text"
+                                                        placeholder="Наименование прикрепляемого файла"
+                                                        aria-label="Input"
+                                                    />
+                                                    <div uk-form-custom="target: true">
+                                                        <input
+                                                            type="file"
+                                                            aria-label="Custom controls"
+                                                        />
+                                                        <input
+                                                            class="uk-input uk-form-width-medium"
+                                                            type="text"
+                                                            placeholder="Выберите файл"
+                                                            aria-label="Custom controls"
+                                                            disabled
+                                                        />
+                                                    </div>
+                                                    <button class="uk-button uk-button-default">
+                                                        Прикрепить
+                                                    </button>
+                                                </div>
+                                                <ul class="uk-list uk-list-disc uk-link-text"></ul>
+                                            </div>
+                                        </div>
 
-                <div>
-                    <span class="ul-text-muted">Приложения:</span>
-                    <ul class="uk-list uk-list-disc uk-link-text">
-                        <li>
-                            <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Гарантия</a>
-                        </li>
+                                        <div class="uk-margin-bottom">
+                                            <label class="uk-form-label" for="attach"
+                                                >Связанные ссылки:</label
+                                            >
+                                            <div class="uk-form-controls">
+                                                <div class="uk-margin" uk-margin>
+                                                    <input
+                                                        class="uk-input"
+                                                        type="text"
+                                                        placeholder="Наименование прикрепляемой ссылки"
+                                                        aria-label="Input"
+                                                    />
+                                                    <div uk-form-custom="target: true">
+                                                        <input
+                                                            type="file"
+                                                            aria-label="Custom controls"
+                                                        />
+                                                        <input
+                                                            class="uk-input uk-form-width-medium"
+                                                            type="text"
+                                                            placeholder="Выберите файл"
+                                                            aria-label="Custom controls"
+                                                            disabled
+                                                        />
+                                                    </div>
+                                                    <button class="uk-button uk-button-default">
+                                                        Прикрепить
+                                                    </button>
+                                                </div>
+                                                <ul class="uk-list uk-list-disc uk-link-text"></ul>
+                                            </div>
+                                        </div>
 
-                        <li>
-                            <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Тех. паспорт</a>
-                        </li>
-
-                        <li>
-                            <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Заключение</a>
-                        </li>
-                    </ul>
+                                        <div
+                                            class="uk-flex uk-text-center uk-container uk-container-small"
+                                        >
+                                            <div class="uk-margin-auto uk-inline">
+                                                <ul class="uk-subnav">
+                                                    <li>
+                                                        <button
+                                                            class="uk-button uk-button-default uk-modal-close"
+                                                            onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})"
+                                                        >
+                                                            <span
+                                                                class="uk-margin-small-right"
+                                                                uk-icon="ban"
+                                                            ></span>
+                                                            Отменить
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button
+                                                            class="uk-button uk-button-default uk-modal-close"
+                                                            onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})"
+                                                        >
+                                                            <span
+                                                                class="uk-margin-small-right"
+                                                                uk-icon="check"
+                                                            ></span>
+                                                            Обновить
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <span class="ul-text-muted">Связанные ссылки:</span>
-                    <ul class="uk-list uk-list-disc uk-link-text">
-                        <li>
-                            <a href="https://schneider-russia.com/" target="_blank">schneider-russia.com</a>
-                        </li>
-
-                        <li>
-                            <a href="https://schneider-russia.com/" target="_blank">schneider-russia.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="uk-text-center">
-                    <button class="uk-button uk-button-default" href="#modal-full-2" uk-toggle><span uk-icon="icon: file-edit"></span> Редактировать</button>
-                </div>
-            </div>
-
-            <div id="modal-full-1" class="uk-modal-full" uk-modal>
-                <div class="uk-modal-dialog">
-                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                    <div class="uk-grid-collapse uk-flex-middle" uk-grid>
-                        <div class="uk-padding-large" uk-height-viewport>
-                            <div class="uk-container uk-container-small uk-margin-auto">
-                                <h1>Добавление</h1>
+                <div id="modal-full-2" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button
+                            class="uk-modal-close-full uk-close-large"
+                            type="button"
+                            uk-close
+                        ></button>
+                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <div class="uk-padding-large" uk-height-viewport>
+                                <h1>Редактирование</h1>
+                                <h3>Регулятор скорости вращения вентиляторов</h3>
 
                                 <form class="uk-form-horizontal uk-margin-large">
                                     <div class="uk-margin-bottom">
@@ -942,11 +1892,11 @@
                                             <select class="uk-select" id="cluster">
                                                 <option>Нижегородская</option>
                                                 <option>Дмитровская</option>
-                                                <option selected>Не выбран</option>
+                                                <option>Не выбран</option>
                                             </select>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
                                         <label class="uk-form-label" for="target">Назначение</label>
                                         <div class="uk-form-controls">
@@ -956,11 +1906,11 @@
                                                 <option>Emerson</option>
                                                 <option>Wilson</option>
                                                 <option>Общее</option>
-                                                <option selected>Не выбран</option>
+                                                <option>Не выбран</option>
                                             </select>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
                                         <label class="uk-form-label" for="system">Система:</label>
                                         <div class="uk-form-controls">
@@ -969,27 +1919,39 @@
                                                 <option>ИБП</option>
                                                 <option>ДГУ</option>
                                                 <option>Электрика</option>
-                                                <option selected>Не выбран</option>
+                                                <option>Не выбран</option>
                                             </select>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="uk-margin-bottom">
                                         <label class="uk-form-label" for="part-number">P/N:</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input" id="part-number" type="text" placeholder="">
+                                            <input
+                                                class="uk-input"
+                                                id="part-number"
+                                                type="text"
+                                                placeholder="42RK131EQ"
+                                            />
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
                                         <label class="uk-form-label" for="aggr">Агрегат:</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input" id="aggr" type="text" placeholder="">
+                                            <input
+                                                class="uk-input"
+                                                id="aggr"
+                                                type="text"
+                                                placeholder="НИЦ-1 К1, НИЦ-1 К5, НИЦ-2 К2, НИЦ-2 К5"
+                                            />
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="place">Место на складе:</label>
+                                        <label class="uk-form-label" for="place"
+                                            >Место на складе:</label
+                                        >
                                         <div class="uk-form-controls">
                                             <select class="uk-select" id="place">
                                                 <option>Полка №1</option>
@@ -997,96 +1959,239 @@
                                                 <option>Полка №3</option>
                                                 <option>Полка №4</option>
                                                 <option>Вент. шахта</option>
-                                                <option selected>Не выбран</option>
+                                                <option>Не выбран</option>
                                             </select>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
                                         <label class="uk-form-label" for="code">Артикул:</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input" id="code" type="text" placeholder="">
+                                            <input
+                                                class="uk-input"
+                                                id="code"
+                                                type="text"
+                                                placeholder="RGE-Z1Q4-7DS"
+                                            />
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="count">Единицы измерения:</label>
+                                        <label class="uk-form-label" for="count"
+                                            >Единицы измерения:</label
+                                        >
                                         <div class="uk-form-controls">
                                             <select class="uk-select" id="place">
                                                 <option>шт.</option>
                                                 <option>л.</option>
                                                 <option>м.</option>
-                                                <option selected>Не выбран</option>
+                                                <option>Не выбран</option>
                                             </select>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="count">Количество (шт.):</label>
+                                        <label class="uk-form-label" for="count"
+                                            >Количество (шт.):</label
+                                        >
                                         <div class="uk-form-controls">
-                                            <input class="uk-input" id="code" type="text" placeholder="">
+                                            <input
+                                                class="uk-input"
+                                                id="code"
+                                                type="text"
+                                                placeholder="4"
+                                            />
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="date">Дата закупки:</label>
+                                        <label class="uk-form-label" for="date"
+                                            >Дата закупки:</label
+                                        >
                                         <div class="uk-form-controls">
-                                            <input class="uk-input" id="code" type="text" placeholder="">
+                                            <input
+                                                class="uk-input"
+                                                id="code"
+                                                type="text"
+                                                placeholder="22.04.2021"
+                                            />
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="comment">Комментарий:</label>
+                                        <label class="uk-form-label" for="comment"
+                                            >Комментарий:</label
+                                        >
                                         <div class="uk-form-controls">
-                                            <textarea class="uk-textarea" rows="7" id="comment" type="text" placeholder=""></textarea>
+                                            <textarea
+                                                class="uk-textarea"
+                                                rows="7"
+                                                id="comment"
+                                                type="text"
+                                                placeholder="Б/У, перемещен на Дмитровскую 22.02.2023"
+                                            ></textarea>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="attach">Приложения:</label>
+                                        <label class="uk-form-label" for="attach"
+                                            >Приложения:</label
+                                        >
                                         <div class="uk-form-controls">
                                             <div class="uk-margin" uk-margin>
-                                                <input class="uk-input" type="text" placeholder="Наименование прикрепляемого файла" aria-label="Input">
+                                                <input
+                                                    class="uk-input"
+                                                    type="text"
+                                                    placeholder="Наименование прикрепляемого файла"
+                                                    aria-label="Input"
+                                                />
                                                 <div uk-form-custom="target: true">
-                                                    <input type="file" aria-label="Custom controls">
-                                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                                                    <input
+                                                        type="file"
+                                                        aria-label="Custom controls"
+                                                    />
+                                                    <input
+                                                        class="uk-input uk-form-width-medium"
+                                                        type="text"
+                                                        placeholder="Выберите файл"
+                                                        aria-label="Custom controls"
+                                                        disabled
+                                                    />
                                                 </div>
-                                                <button class="uk-button uk-button-default">Прикрепить</button>
+                                                <button class="uk-button uk-button-default">
+                                                    Прикрепить
+                                                </button>
                                             </div>
                                             <ul class="uk-list uk-list-disc uk-link-text">
+                                                <li>
+                                                    <a
+                                                        href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                                        target="_blank"
+                                                        >Гарантия</a
+                                                    >
+                                                    <a
+                                                        class="delete-attach"
+                                                        href="#"
+                                                        uk-icon="close"
+                                                        uk-tooltip="Удалить вложение"
+                                                    ></a>
+                                                </li>
 
+                                                <li>
+                                                    <a
+                                                        href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                                        target="_blank"
+                                                        >Тех. паспорт</a
+                                                    >
+                                                    <a
+                                                        class="delete-attach"
+                                                        href="#"
+                                                        uk-icon="close"
+                                                        uk-tooltip="Удалить вложение"
+                                                    ></a>
+                                                </li>
+
+                                                <li>
+                                                    <a
+                                                        href="https://storedata.ru/files/my-storedata-manual.pdf"
+                                                        target="_blank"
+                                                        >Заключение</a
+                                                    >
+                                                    <a
+                                                        class="delete-attach"
+                                                        href="#"
+                                                        uk-icon="close"
+                                                        uk-tooltip="Удалить вложение"
+                                                    ></a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
-    
+
                                     <div class="uk-margin-bottom">
-                                        <label class="uk-form-label" for="attach">Связанные ссылки:</label>
+                                        <label class="uk-form-label" for="attach"
+                                            >Связанные ссылки:</label
+                                        >
                                         <div class="uk-form-controls">
                                             <div class="uk-margin" uk-margin>
-                                                <input class="uk-input" type="text" placeholder="Наименование прикрепляемой ссылки" aria-label="Input">
+                                                <input
+                                                    class="uk-input"
+                                                    type="text"
+                                                    placeholder="Наименование прикрепляемой ссылки"
+                                                    aria-label="Input"
+                                                />
                                                 <div uk-form-custom="target: true">
-                                                    <input type="file" aria-label="Custom controls">
-                                                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                                                    <input
+                                                        type="file"
+                                                        aria-label="Custom controls"
+                                                    />
+                                                    <input
+                                                        class="uk-input uk-form-width-medium"
+                                                        type="text"
+                                                        placeholder="Выберите файл"
+                                                        aria-label="Custom controls"
+                                                        disabled
+                                                    />
                                                 </div>
-                                                <button class="uk-button uk-button-default">Прикрепить</button>
+                                                <button class="uk-button uk-button-default">
+                                                    Прикрепить
+                                                </button>
                                             </div>
                                             <ul class="uk-list uk-list-disc uk-link-text">
+                                                <li>
+                                                    <a href="https://schneider-russia.com/"
+                                                        >schneider-russia.com</a
+                                                    >
+                                                    <a
+                                                        class="delete-attach"
+                                                        href="#"
+                                                        uk-icon="close"
+                                                        uk-tooltip="Удалить вложение"
+                                                    ></a>
+                                                </li>
 
+                                                <li>
+                                                    <a href="https://schneider-russia.com/"
+                                                        >schneider-russia.com</a
+                                                    >
+                                                    <a
+                                                        class="delete-attach"
+                                                        href="#"
+                                                        uk-icon="close"
+                                                        uk-tooltip="Удалить вложение"
+                                                    ></a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    
-                                    <div class="uk-flex uk-text-center uk-container uk-container-small">
+
+                                    <div
+                                        class="uk-flex uk-text-center uk-container uk-container-small"
+                                    >
                                         <div class="uk-margin-auto uk-inline">
                                             <ul class="uk-subnav">
                                                 <li>
-                                                    <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})">
-                                                        <span class="uk-margin-small-right" uk-icon="ban"></span> Отменить
+                                                    <button
+                                                        class="uk-button uk-button-default uk-modal-close"
+                                                        onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})"
+                                                    >
+                                                        <span
+                                                            class="uk-margin-small-right"
+                                                            uk-icon="ban"
+                                                        ></span>
+                                                        Отменить
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})">
-                                                        <span class="uk-margin-small-right" uk-icon="check"></span> Обновить
+                                                    <button
+                                                        class="uk-button uk-button-default uk-modal-close"
+                                                        onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})"
+                                                    >
+                                                        <span
+                                                            class="uk-margin-small-right"
+                                                            uk-icon="check"
+                                                        ></span>
+                                                        Обновить
                                                     </button>
                                                 </li>
                                             </ul>
@@ -1097,205 +2202,9 @@
                         </div>
                     </div>
                 </div>
-            </div>  
-
-            <div id="modal-full-2" class="uk-modal-full" uk-modal>
-                <div class="uk-modal-dialog">
-                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-
-                        <div class="uk-padding-large" uk-height-viewport>
-                            <h1>Редактирование</h1>
-                            <h3>Регулятор скорости вращения вентиляторов</h3>
-
-                            <form class="uk-form-horizontal uk-margin-large">
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="cluster">Кластер</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="cluster">
-                                            <option>Нижегородская</option>
-                                            <option>Дмитровская</option>
-                                            <option>Не выбран</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="target">Назначение</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="target">
-                                            <option>Stulz</option>
-                                            <option>HiRef</option>
-                                            <option>Emerson</option>
-                                            <option>Wilson</option>
-                                            <option>Общее</option>
-                                            <option>Не выбран</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="system">Система:</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="system">
-                                            <option>Кондиционирование</option>
-                                            <option>ИБП</option>
-                                            <option>ДГУ</option>
-                                            <option>Электрика</option>
-                                            <option>Не выбран</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="part-number">P/N:</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="part-number" type="text" placeholder="42RK131EQ">
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="aggr">Агрегат:</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="aggr" type="text" placeholder="НИЦ-1 К1, НИЦ-1 К5, НИЦ-2 К2, НИЦ-2 К5">
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="place">Место на складе:</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="place">
-                                            <option>Полка №1</option>
-                                            <option>Полка №2</option>
-                                            <option>Полка №3</option>
-                                            <option>Полка №4</option>
-                                            <option>Вент. шахта</option>
-                                            <option>Не выбран</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="code">Артикул:</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="code" type="text" placeholder="RGE-Z1Q4-7DS">
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="count">Единицы измерения:</label>
-                                    <div class="uk-form-controls">
-                                        <select class="uk-select" id="place">
-                                            <option>шт.</option>
-                                            <option>л.</option>
-                                            <option>м.</option>
-                                            <option>Не выбран</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="count">Количество (шт.):</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="code" type="text" placeholder="4">
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="date">Дата закупки:</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="code" type="text" placeholder="22.04.2021">
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="comment">Комментарий:</label>
-                                    <div class="uk-form-controls">
-                                        <textarea class="uk-textarea" rows="7" id="comment" type="text" placeholder="Б/У, перемещен на Дмитровскую 22.02.2023"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="attach">Приложения:</label>
-                                    <div class="uk-form-controls">
-                                        <div class="uk-margin" uk-margin>
-                                            <input class="uk-input" type="text" placeholder="Наименование прикрепляемого файла" aria-label="Input">
-                                            <div uk-form-custom="target: true">
-                                                <input type="file" aria-label="Custom controls">
-                                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
-                                            </div>
-                                            <button class="uk-button uk-button-default">Прикрепить</button>
-                                        </div>
-                                        <ul class="uk-list uk-list-disc uk-link-text">
-                                            <li>
-                                                <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Гарантия</a>
-                                                <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Тех. паспорт</a>
-                                                <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="https://storedata.ru/files/my-storedata-manual.pdf" target="_blank">Заключение</a>
-                                                <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="uk-margin-bottom">
-                                    <label class="uk-form-label" for="attach">Связанные ссылки:</label>
-                                    <div class="uk-form-controls">
-                                        <div class="uk-margin" uk-margin>
-                                            <input class="uk-input" type="text" placeholder="Наименование прикрепляемой ссылки" aria-label="Input">
-                                            <div uk-form-custom="target: true">
-                                                <input type="file" aria-label="Custom controls">
-                                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
-                                            </div>
-                                            <button class="uk-button uk-button-default">Прикрепить</button>
-                                        </div>
-                                        <ul class="uk-list uk-list-disc uk-link-text">
-                                            <li>
-                                                <a href="https://schneider-russia.com/">schneider-russia.com</a>
-                                                <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
-                                            </li>
-
-                                            <li>
-                                                <a href="https://schneider-russia.com/">schneider-russia.com</a>
-                                                <a class="delete-attach" href="#" uk-icon="close" uk-tooltip="Удалить вложение"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                <div class="uk-flex uk-text-center uk-container uk-container-small">
-                                    <div class="uk-margin-auto uk-inline">
-                                        <ul class="uk-subnav">
-                                            <li>
-                                                <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: ban\'></span> Изменение отменено', pos: 'top-right'})">
-                                                    <span class="uk-margin-small-right" uk-icon="ban"></span> Отменить
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="uk-button uk-button-default uk-modal-close" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Изменения сохранены', pos: 'top-right'})">
-                                                    <span class="uk-margin-small-right" uk-icon="check"></span> Обновить
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-
-    </div>
-</body>
+    </body>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="main.js"></script>
