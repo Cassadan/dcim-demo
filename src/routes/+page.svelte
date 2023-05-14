@@ -11,50 +11,48 @@
     Меню
 </button>
 
-<!-- svelte-ignore a11y-invalid-attribute -->
-
 <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-default">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">ITSM</a></li>
-            <li class="uk-active"><a href="#">DCIM</a></li>
+            <li><a href={"#"}>Dashboard</a></li>
+            <li><a href={"#"}>ITSM</a></li>
+            <li class="uk-active"><a href={"#"}>DCIM</a></li>
             <li class="uk-parent">
-                <a href="#">Parent</a>
+                <a href={"#"}>Parent</a>
                 <ul class="uk-nav-sub">
-                    <li><a href="#">Подменю 1</a></li>
-                    <li><a href="#">Подменю 2</a></li>
+                    <li><a href={"#"}>Подменю 1</a></li>
+                    <li><a href={"#"}>Подменю 2</a></li>
                 </ul>
             </li>
-            <li><a href="#">Inventory</a></li>
+            <li><a href={"#"}>Inventory</a></li>
             <li class="uk-nav-header">Ссылки</li>
             <li>
-                <a href="#"
+                <a href={"#"}
                     ><span class="uk-margin-small-right" uk-icon="icon: table" />
                     Мегаплан</a
                 >
             </li>
             <li>
-                <a href="#"
+                <a href={"#"}
                     ><span class="uk-margin-small-right" uk-icon="icon: thumbnails" />
                     Кабельное хозяйство</a
                 >
             </li>
             <li>
-                <a href="#"
+                <a href={"#"}
                     ><span class="uk-margin-small-right" uk-icon="icon: table" />
                     Wiki</a
                 >
             </li>
             <li>
-                <a href="#"
+                <a href={"#"}
                     ><span class="uk-margin-small-right" uk-icon="icon: thumbnails" />
                     ASANA</a
                 >
             </li>
             <li class="uk-nav-divider" />
             <li>
-                <a href="#"
+                <a href={"#"}
                     ><span class="uk-margin-small-right" uk-icon="icon: file-text" />
                     Руководоство</a
                 >
@@ -63,16 +61,14 @@
     </div>
 </div>
 
-<!-- svelte-ignore a11y-invalid-attribute -->
-
 <div class="uk-container uk-container-medium">
     <div class="page-title">DCIM</div>
 
     <ul uk-tab="animation: uk-animation-slide-right-medium">
-        <li><a href="#">Склад</a></li>
-        <li><a href="#">Оборудование</a></li>
-        <li><a href="#">События</a></li>
-        <li><a href="#">Планировщик</a></li>
+        <li><a href={"#"}>Склад</a></li>
+        <li><a href={"#"}>Оборудование</a></li>
+        <li><a href={"#"}>События</a></li>
+        <li><a href={"#"}>Планировщик</a></li>
     </ul>
 
     <ul class="uk-switcher uk-margin">
@@ -132,10 +128,10 @@
                                     <button class="uk-button uk-button-default"><span class="uk-margin-small-right" uk-icon="album"></span> Сортировка</button>
                                     <div class="uk-dropdown uk-width-medium" uk-dropdown="animation: reveal-top; animate-out: true; duration: 700; mode: click">
                                         <ul class="uk-nav uk-dropdown-nav uk-width-auto">
-                                            <li class="uk-active"><a href="#"><span uk-icon="icon: arrow-down"></span> По системе</a></li>
-                                            <li><a href="#"><span uk-icon="icon: arrow-up"></span> По назначению</a></li>
-                                            <li><a href="#"><span uk-icon="icon: arrow-up"></span> По типу</a></li>
-                                            <li><a href="#"><span uk-icon="icon: arrow-up"></span> По дате закупки</a></li>
+                                            <li class="uk-active"><a href={"#"}><span uk-icon="icon: arrow-down"></span> По системе</a></li>
+                                            <li><a href={"#"}><span uk-icon="icon: arrow-up"></span> По назначению</a></li>
+                                            <li><a href={"#"}><span uk-icon="icon: arrow-up"></span> По типу</a></li>
+                                            <li><a href={"#"}><span uk-icon="icon: arrow-up"></span> По дате закупки</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -337,22 +333,22 @@
                 <thead>
                     <tr>
                         <th class="uk-table-link">
-                            <a class="uk-link-reset" href="#"
+                            <a class="uk-link-reset" href={"#"}
                                 >Система <span uk-icon="icon: arrow-up" /></a
                             >
                         </th>
                         <th class="uk-table-link">
-                            <a class="uk-link-reset" href="#"
+                            <a class="uk-link-reset" href={"#"}
                                 >Назначение <span uk-icon="icon: arrow-down" /></a
                             >
                         </th>
                         <th class="uk-table-link">
-                            <a class="uk-link-reset" href="#"
+                            <a class="uk-link-reset" href={"#"}
                                 >Наименование <span uk-icon="icon: arrow-down" /></a
                             >
                         </th>
                         <th class="uk-table-link">
-                            <a class="uk-link-reset" href="#"
+                            <a class="uk-link-reset" href={"#"}
                                 >Артикул <span uk-icon="icon: arrow-up" /></a
                             >
                         </th>
@@ -617,24 +613,24 @@
 
             <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
                 <li class="uk-active">
-                    <a href="#"><span uk-pagination-previous /></a>
+                    <a href={"#"}><span uk-pagination-previous /></a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
+                <li><a href={"#"}>1</a></li>
+                <li><a href={"#"}>2</a></li>
                 <li class="uk-disabled"><span>…</span></li>
-                <li><a href="#">12</a></li>
-                <li><a href="#">13</a></li>
+                <li><a href={"#"}>12</a></li>
+                <li><a href={"#"}>13</a></li>
                 <li>
-                    <a href="#"><span uk-pagination-next /></a>
+                    <a href={"#"}><span uk-pagination-next /></a>
                 </li>
             </ul>
         </li>
 
         <li>
             <ul class="uk-child-width-expand" uk-tab="animation: uk-animation-slide-right-medium">
-                <li><a href="#">НИЦ-1</a></li>
-                <li><a href="#">НИЦ-2</a></li>
-                <li><a href="#">НИЦ-3</a></li>
+                <li><a href={"#"}>НИЦ-1</a></li>
+                <li><a href={"#"}>НИЦ-2</a></li>
+                <li><a href={"#"}>НИЦ-3</a></li>
             </ul>
 
             <ul class="uk-switcher uk-margin">
@@ -655,13 +651,13 @@
                                             >
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-2</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-3</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-4</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-4</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -676,25 +672,25 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-1</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-2</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-3</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-4</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-4</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-5</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-5</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-6</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-6</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">HiRef К-7</a>
+                                            <a class="uk-link-heading" href={"#"}>HiRef К-7</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -709,7 +705,7 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">WG Wilson 1250</a>
+                                            <a class="uk-link-heading" href={"#"}>WG Wilson 1250</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -724,16 +720,16 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-1</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-2</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-3</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-4</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-4</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -752,10 +748,10 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-1</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-2</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-2</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -770,19 +766,19 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-1</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-2</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-3</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-4</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-4</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-5</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-5</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -797,7 +793,7 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">WG Wilson 1000</a>
+                                            <a class="uk-link-heading" href={"#"}>WG Wilson 1000</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -812,10 +808,10 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-1</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-2</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-2</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -841,13 +837,13 @@
                                             >
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-2</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-3</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Emerson ИБП-4</a>
+                                            <a class="uk-link-heading" href={"#"}>Emerson ИБП-4</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -862,19 +858,19 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-1</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-2</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-3</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-3</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-4</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-4</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">Stulz К-5</a>
+                                            <a class="uk-link-heading" href={"#"}>Stulz К-5</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -889,7 +885,7 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">WG Wilson 1250</a>
+                                            <a class="uk-link-heading" href={"#"}>WG Wilson 1250</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -904,13 +900,13 @@
                                 <div class="uk-text-center">
                                     <ul class="uk-list uk-list-collapse uk-list-divider">
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-1</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-1</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-2</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-2</a>
                                         </li>
                                         <li>
-                                            <a class="uk-link-heading" href="#">РЩ-3</a>
+                                            <a class="uk-link-heading" href={"#"}>РЩ-3</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1152,37 +1148,37 @@
                     <thead>
                         <tr>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Дата <span uk-icon="icon: arrow-up" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >ЦОД <span uk-icon="icon: arrow-down" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Оборудование <span uk-icon="icon: arrow-up" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Тип <span uk-icon="icon: arrow-down" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Событие <span uk-icon="icon: arrow-down" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Исполнитель <span uk-icon="icon: arrow-up" /></a
                                 >
                             </th>
                             <th class="uk-table-link">
-                                <a class="uk-link-reset" href="#"
+                                <a class="uk-link-reset" href={"#"}
                                     >Состояние <span uk-icon="icon: arrow-up" /></a
                                 >
                             </th>
@@ -1195,7 +1191,7 @@
                             <td>ИБП-1</td>
                             <td>Авария</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Отказ вентиляторов</a>
+                                <a class="uk-link-reset" href={"#"}>Отказ вентиляторов</a>
                             </td>
                             <td>Лизунов А.</td>
                             <td><span class="uk-label uk-label-warning">В работе</span></td>
@@ -1206,7 +1202,7 @@
                             <td>ИБП-2</td>
                             <td>Авария</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Сгорел конденсатор</a>
+                                <a class="uk-link-reset" href={"#"}>Сгорел конденсатор</a>
                             </td>
                             <td>Лизунов А.</td>
                             <td>
@@ -1219,7 +1215,7 @@
                             <td>ИБП-2</td>
                             <td>ТО</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Плановое ТО</a>
+                                <a class="uk-link-reset" href={"#"}>Плановое ТО</a>
                             </td>
                             <td>Кузнецов А.</td>
                             <td>
@@ -1232,7 +1228,7 @@
                             <td>Stulz</td>
                             <td>ТО</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Пайка трубок</a>
+                                <a class="uk-link-reset" href={"#"}>Пайка трубок</a>
                             </td>
                             <td>Ягжов С.</td>
                             <td>
@@ -1245,7 +1241,7 @@
                             <td>ИБП-2</td>
                             <td>Авария</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Сгорел конденсатор</a>
+                                <a class="uk-link-reset" href={"#"}>Сгорел конденсатор</a>
                             </td>
                             <td>Лизунов А.</td>
                             <td>
@@ -1258,7 +1254,7 @@
                             <td>ИБП-2</td>
                             <td>ТО</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Плановое ТО</a>
+                                <a class="uk-link-reset" href={"#"}>Плановое ТО</a>
                             </td>
                             <td>Кузнецов А.</td>
                             <td>
@@ -1271,7 +1267,7 @@
                             <td>Stulz</td>
                             <td>ТО</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Пайка трубок</a>
+                                <a class="uk-link-reset" href={"#"}>Пайка трубок</a>
                             </td>
                             <td>Ягжов С.</td>
                             <td>
@@ -1284,7 +1280,7 @@
                             <td>ИБП-2</td>
                             <td>Авария</td>
                             <td class="uk-text-truncate uk-table-link">
-                                <a class="uk-link-reset" href="#">Отказ контроллера</a>
+                                <a class="uk-link-reset" href={"#"}>Отказ контроллера</a>
                             </td>
                             <td>Лизунов А.</td>
                             <td><span class="uk-label uk-label-warning">В работе</span></td>
@@ -1294,15 +1290,15 @@
 
                 <ul class="uk-pagination uk-flex-center uk-margin-medium-bottom" uk-margin>
                     <li class="uk-active">
-                        <a href="#"><span uk-pagination-previous /></a>
+                        <a href={"#"}><span uk-pagination-previous /></a>
                     </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
+                    <li><a href={"#"}>1</a></li>
+                    <li><a href={"#"}>2</a></li>
                     <li class="uk-disabled"><span>…</span></li>
-                    <li><a href="#">12</a></li>
-                    <li><a href="#">13</a></li>
+                    <li><a href={"#"}>12</a></li>
+                    <li><a href={"#"}>13</a></li>
                     <li>
-                        <a href="#"><span uk-pagination-next /></a>
+                        <a href={"#"}><span uk-pagination-next /></a>
                     </li>
                 </ul>
             </div>
@@ -1315,7 +1311,7 @@
                         <h3 class="uk-card-title">Тех. обслуживание ИБП</h3>
                         <p>Тип: регулярное</p>
                         <p>Ближайшая дата: 23.02.2024</p>
-                        <a class="uk-link-muted" href="#">Подробнее</a>
+                        <a class="uk-link-muted" href={"#"}>Подробнее</a>
                     </div>
                 </div>
                 <div>
@@ -1323,7 +1319,7 @@
                         <h3 class="uk-card-title">Тех. обслуживание ДГУ</h3>
                         <p>Тип: разовое</p>
                         <p>Ближайшая дата: 23.02.2024</p>
-                        <a class="uk-link-muted" href="#">Подробнее</a>
+                        <a class="uk-link-muted" href={"#"}>Подробнее</a>
                     </div>
                 </div>
                 <div>
@@ -1331,7 +1327,7 @@
                         <h3 class="uk-card-title">Промывка внешних блоков кондиционеров</h3>
                         <p>Тип: разовое</p>
                         <p>Ближайшая дата: 23.02.2024</p>
-                        <a class="uk-link-muted" href="#">Подробнее</a>
+                        <a class="uk-link-muted" href={"#"}>Подробнее</a>
                     </div>
                 </div>
                 <div>
@@ -1339,7 +1335,7 @@
                         <h3 class="uk-card-title">Тех. обслуживание кондиционеров НИЦ-1</h3>
                         <p>Тип: регулярное</p>
                         <p>Ближайшая дата: 23.02.2024</p>
-                        <a class="uk-link-muted" href="#">Подробнее</a>
+                        <a class="uk-link-muted" href={"#"}>Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -1887,7 +1883,7 @@
                                             >
                                             <a
                                                 class="delete-attach"
-                                                href="#"
+                                                href={"#"}
                                                 uk-icon="close"
                                                 uk-tooltip="Удалить вложение">&nbsp;</a
                                             >
@@ -1900,7 +1896,7 @@
                                             >
                                             <a
                                                 class="delete-attach"
-                                                href="#"
+                                                href={"#"}
                                                 uk-icon="close"
                                                 uk-tooltip="Удалить вложение">&nbsp;</a
                                             >
@@ -1913,7 +1909,7 @@
                                             >
                                             <a
                                                 class="delete-attach"
-                                                href="#"
+                                                href={"#"}
                                                 uk-icon="close"
                                                 uk-tooltip="Удалить вложение">&nbsp;</a
                                             >
@@ -1953,7 +1949,7 @@
                                             >
                                             <a
                                                 class="delete-attach"
-                                                href="#"
+                                                href={"#"}
                                                 uk-icon="close"
                                                 uk-tooltip="Удалить вложение">&nbsp;</a
                                             >
@@ -1965,7 +1961,7 @@
                                             >
                                             <a
                                                 class="delete-attach"
-                                                href="#"
+                                                href={"#"}
                                                 uk-icon="close"
                                                 uk-tooltip="Удалить вложение">&nbsp;</a
                                             >
