@@ -2,9 +2,9 @@
     // @ts-nocheck
 
     import UIkit from "uikit";
-    // import Icons from "uikit/dist/js/uikit-icons";
+    import Icons from "uikit/dist/js/uikit-icons";
 
-    // UIkit.use(Icons);
+    UIkit.use(Icons);
 </script>
 
 <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
@@ -315,8 +315,7 @@
                             <li>
                                 <button
                                     class="uk-button uk-button-default"
-                                    href="#modal-full-1"
-                                    uk-toggle
+                                    uk-toggle="target: #modal-full-1"
                                 >
                                     <span class="uk-margin-small-right" uk-icon="plus" />
                                     Добавить
@@ -1131,8 +1130,7 @@
                             <li>
                                 <button
                                     class="uk-button uk-button-default"
-                                    href="#modal-full-1"
-                                    uk-toggle
+                                    uk-toggle="target: #modal-full-1"
                                 >
                                     <span class="uk-margin-small-right" uk-icon="plus" />
                                     Добавить
@@ -1447,7 +1445,7 @@
             </div>
 
             <div class="uk-text-center">
-                <button class="uk-button uk-button-default" href="#modal-full-2" uk-toggle>
+                <button class="uk-button uk-button-default" uk-toggle="target: #modal-full-2">
                     <span uk-icon="icon: file-edit" /> Редактировать
                 </button>
             </div>
